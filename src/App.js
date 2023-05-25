@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      <h1>Golu</h1>
-      <h1>Asif</h1>
+
+      <div className='mb-2'>
+        <Header />
+      </div>
+
+      <div>
+        <SideBar />
+      </div>
+
     </>
   );
 }

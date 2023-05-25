@@ -1,4 +1,118 @@
-.App {
+* {
     margin: 0;
     padding: 0;
+}
+
+.mainDive {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+/*----------------------------------------------------- HEADER BAR ----------------------------------------------*/
+
+.headerBar {
+    background-color: rgb(31, 42, 64);
+    min-height: 50px;
+}
+
+.leftTitle {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+.leftTitle::first-letter{
+    font-size: 30px;
+}
+
+.headerList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.headerList li {
+    display: inline;
+    margin: 0px 10px 0px 10px;
+    color: white;
+}
+
+.neonText:hover {
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow:
+    /* White glow */
+    0 0 7px #ffffff,
+    0 0 10px #ffffff,
+    0 0 21px #ffffff,
+    /* Green glow */
+    0 0 42px #00ff00,
+    0 0 82px #00ff00,
+    0 0 92px #00ff00,
+    0 0 102px #00ff00,
+    0 0 151px #00ff00;
+}
+
+/* ---------------------------- SIDEBAR -------------------------- */
+
+div.leftsideBar {
+    background-color: rgb(31, 42, 64);
+    height: 100vh;
+    width: 270px;
+}
+
+.topTitleButton {
+    font-size: 30px;
+}
+
+.userSection img {
+    border-radius: 50%;
+}
+
+.userSection .userName{
+    font-size: 30px;
+}
+
+.userSection ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.userSection ul li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    display: block;
+    text-transform: capitalize;
+    transition: font-size 1s;
+}
+
+.userSection ul li:hover{
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+    
 }
