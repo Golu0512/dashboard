@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
 
-function Home() {
+function Home(props) {
     return (
         <>
             <div className="my-2">
@@ -16,7 +16,7 @@ function Home() {
 
                 <div className="row px-0 mx-0">
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>
@@ -32,7 +32,7 @@ function Home() {
                     </div>
 
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>
@@ -48,7 +48,7 @@ function Home() {
                     </div>
 
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>
@@ -67,7 +67,7 @@ function Home() {
 
                 <div className="row my-3 px-0 mx-0">
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>
@@ -83,7 +83,7 @@ function Home() {
                     </div>
 
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>
@@ -99,7 +99,7 @@ function Home() {
                     </div>
 
                     <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
-                        <div className="card cardStyle">
+                        <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/asifimg1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
                             <h5 className="card-title">Card title</h5>

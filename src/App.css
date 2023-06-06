@@ -7,8 +7,10 @@
 
 .cardStyle {
     width: 18rem;
+    box-shadow: 0px 0px 10px black;
 }
 
 .cardImage {
     object-fit: fill;
 }
+

@@ -1,10 +1,10 @@
 import React from "react";
 import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 
-function Header() {
+function Header(props) {
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
             <a className="navbar-brand" href="#">
                 Medicine
@@ -25,12 +25,12 @@ function Header() {
                 <a className="nav-link active" aria-current="page" href="#">
                     Home
                 </a>
-                <a className="nav-link" href="#">
-                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsMoonStarsFill /></span>
-                </a>
-                <a className="nav-link" href="#">
-                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsSun /></span>
-                </a>
+                {props.mode === 'light' ? <a className="nav-link" onClick={props.toggleMode} href="#">
+                        <BsMoonStarsFill />
+                    </a> : <a className="nav-link" onClick={props.toggleMode} href="#">
+                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsSun /></span>
+                    </a>
+                }
                 </div>
             </div>
             </div>
