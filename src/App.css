@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+/* -------------------- Card --------------------- */
+
+.cardStyle {
+    width: 18rem;
+}
+
+.cardImage {
+    object-fit: fill;
+}

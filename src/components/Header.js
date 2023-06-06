@@ -1,4 +1,5 @@
 import React from "react";
+import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 
 function Header() {
     return (
@@ -6,7 +7,7 @@ function Header() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
             <a className="navbar-brand" href="#">
-                Navbar
+                Medicine
             </a>
             <button
                 className="navbar-toggler"
@@ -25,18 +26,10 @@ function Header() {
                     Home
                 </a>
                 <a className="nav-link" href="#">
-                    Features
+                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsMoonStarsFill /></span>
                 </a>
                 <a className="nav-link" href="#">
-                    Pricing
-                </a>
-                <a
-                    className="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                >
-                    Disabled
+                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsSun /></span>
                 </a>
                 </div>
             </div>
