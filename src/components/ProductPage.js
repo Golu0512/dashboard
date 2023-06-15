@@ -7,7 +7,7 @@ export default function ProductPage(props) {
             <div className="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center py-3">
             <div className="pImageSection">
                 <img
-                src={`./images/med1.jpg`}
+                src={props.img}
                 className="pImage"
                 width={"500"}
                 height={`500`}
