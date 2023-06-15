@@ -4,7 +4,9 @@ import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 function Header(props) {
     return (
         <>
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+        <nav
+            className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} position-sticky top-0 index1`}
+        >
             <div className="container-fluid">
             <a className="navbar-brand" href="#">
                 Medicine
@@ -25,15 +27,39 @@ function Header(props) {
                 <a className="nav-link active" aria-current="page" href="#">
                     Home
                 </a>
-                {props.mode === 'light' ? <a className="nav-link" onClick={props.toggleMode} href="#">
-                        <BsMoonStarsFill />
-                    </a> : <a className="nav-link" onClick={props.toggleMode} href="#">
-                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Dark Mode"><BsSun /></span>
+                {props.mode === "light" ? (
+                    <a className="nav-link" onClick={props.toggleMode} href={"#"}>
+                    <BsMoonStarsFill />
                     </a>
-                }
+                ) : (
+                    <a className="nav-link" onClick={props.toggleMode} href={"#"}>
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Dark Mode"
+                    >
+                        <BsSun />
+                    </span>
+                    </a>
+                )}
+
+                <input
+                    className={`form-control bg-${props.mode}`}
+                    style={{
+                    color: `${props.mode === "light" ? "black" : "white"}`,
+                    }}
+                    type="search"
+                    placeholder="Search by name or salt"
+                    aria-label="Search"
+                />
                 </div>
             </div>
             </div>
+
+            {/* <form class="d-flex bg-info w-50 me-5">
+                    <input className="form-control" type="search" placeholder="Search by name or salt" aria-label="Search" />
+                    <button className="btn btn-outline-success" type="submit">Search</button>
+                </form> */}
         </nav>
         </>
     );

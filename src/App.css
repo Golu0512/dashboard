@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.index1 {
+    z-index: 1;
+}
+
 /* -------------------- Card --------------------- */
 
 .cardStyle {
@@ -14,3 +18,13 @@
     object-fit: fill;
 }
 
+/* ---------------------- Product Page ------------------- */
+
+/* .pImageSection {
+    height: 200px;
+    width: 200px;
+} */
+
+.pImage {
+    object-fit: contain;
+}
