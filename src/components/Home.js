@@ -14,8 +14,8 @@ function Home(props) {
 
             {/* products section */}
 
-                <div className="row px-0 mx-0">
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                <div className="row mt-5 px-0 mx-0">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
@@ -31,7 +31,7 @@ function Home(props) {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
@@ -47,7 +47,7 @@ function Home(props) {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
@@ -65,8 +65,8 @@ function Home(props) {
 
                 </div>
 
-                <div className="row my-3 px-0 mx-0">
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                <div className="row px-0 mx-0">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
@@ -82,7 +82,7 @@ function Home(props) {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
@@ -98,7 +98,7 @@ function Home(props) {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-4 col-md-4 col-sm-1 d-flex justify-content-center align-items-center mb-3">
                         <div className={`card cardStyle bg-${props.mode} text-${props.mode === 'light' ? 'black' : 'white'}`}>
                             <img className="card-img-top cardImage" src="./images/med1.jpg" height={'150'} alt="Card image cap" />
                             <div className="card-body">
