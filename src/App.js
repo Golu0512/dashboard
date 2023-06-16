@@ -23,12 +23,10 @@ function App() {
         setMode('light');
         document.body.style.backgroundColor = 'white';
         document.body.style.color = 'black';
-        // showAlert('light mode has been enable', 'success');
       } else {
         setMode('dark');
         document.body.style.backgroundColor = 'black';
         document.body.style.color = 'white';
-        // showAlert('dark mode has been enable', 'success');
       }
     };
 
