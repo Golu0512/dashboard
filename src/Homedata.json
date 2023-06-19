@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "pimg": "./images/med1.jpg",
+        "name": "paracetamol",
+        "indication": "fever, cold"
+    },
+    {
+        "id": 2,
+        "pimg": "./images/med1.jpg",
+        "name": "ajoobi",
+        "indication": "fever, cold"
+    },
+    {
+        "id": 3,
+        "pimg": "./images/med1.jpg",
+        "name": "paracetamol",
+        "indication": "fever, cold"
+    },
+    {
+        "id": 4,
+        "pimg": "./images/med1.jpg",
+        "name": "dycloplus",
+        "indication": "fever, cold"
+    },
+    {
+        "id": 5,
+        "pimg": "./images/med1.jpg",
+        "name": "chemlopro",
+        "indication": "fever, cold"
+    },
+    {
+        "id": 6,
+        "pimg": "./images/med1.jpg",
+        "name": "xumivital",
+        "indication": "multivitamin"
+    }
+]
