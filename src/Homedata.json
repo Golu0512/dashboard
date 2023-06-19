@@ -3,36 +3,54 @@
         "id": 1,
         "pimg": "./images/med1.jpg",
         "name": "paracetamol",
-        "indication": "fever, cold"
+        "combination": "anti, biotic",
+        "indication": "fever, cold",
+        "discription": "jveuaefheevnjvekjbvaeubevbeuubeuia;",
+        "mrp": "10"
     },
     {
         "id": 2,
         "pimg": "./images/med1.jpg",
         "name": "ajoobi",
-        "indication": "fever, cold"
+        "combination": "anti, biotic",
+        "indication": "fever, cold",
+        "discription": "jkvejkvkjvevjevvjkvjdfkfvnjdv",
+        "mrp": "5"
     },
     {
         "id": 3,
         "pimg": "./images/med1.jpg",
         "name": "paracetamol",
-        "indication": "fever, cold"
+        "combination": "anti, biotic",
+        "indication": "fever, cold",
+        "discription": "uuuuuuuuuubejbejbalbjba;viuiererv",
+        "mrp": "10"
     },
     {
         "id": 4,
         "pimg": "./images/med1.jpg",
         "name": "dycloplus",
-        "indication": "fever, cold"
+        "combination": "anti, biotic",
+        "indication": "pain",
+        "discription": "bfbjeakkjvbvbiluevbhlaeiuhgieafbeabveabeui",
+        "mrp": "2"
     },
     {
         "id": 5,
         "pimg": "./images/med1.jpg",
         "name": "chemlopro",
-        "indication": "fever, cold"
+        "combination": "anti, biotic",
+        "indication": "fever, cold",
+        "discription": "eneifhaw;fweeuhe;vbhehnf;weihfew;ifhawe;if",
+        "mrp": "120"
     },
     {
         "id": 6,
         "pimg": "./images/med1.jpg",
         "name": "xumivital",
-        "indication": "multivitamin"
+        "combination": "anti, biotic",
+        "indication": "multivitamin",
+        "discription": "uiewbfuiwebf;wefbewufbwefbwefbewfbewufbewufwfewfe",
+        "mrp": "165"
     }
 ]

@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook,BsTwitter } from "react-icons/bs";
+// import { BsFacebook,BsTwitter } from "react-icons/bs";
 
 function Footer() {
     return (
