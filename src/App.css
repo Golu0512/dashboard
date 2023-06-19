@@ -6,6 +6,9 @@
 .index1 {
     z-index: 1;
 }
+.pointer{
+    cursor: pointer;
+}
 
 /* -------------------- Card --------------------- */
 

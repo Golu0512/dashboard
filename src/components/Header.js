@@ -24,23 +24,17 @@ function Header(props) {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active" aria-current="page" href="/">
                     Home
                 </a>
                 {props.mode === "light" ? (
-                    <a className="nav-link" onClick={props.toggleMode} href={"#"}>
-                    <BsMoonStarsFill />
-                    </a>
+                    <span className="nav-link pointer" onClick={props.toggleMode}>
+                        <BsMoonStarsFill />
+                    </span>
                 ) : (
-                    <a className="nav-link" onClick={props.toggleMode} href={"#"}>
-                    <span
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        title="Dark Mode"
-                    >
+                    <span className="nav-link pointer" onClick={props.toggleMode}>
                         <BsSun />
                     </span>
-                    </a>
                 )}
 
                 <input
