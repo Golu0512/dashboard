@@ -1,15 +1,15 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Homedata from "../Homedata.json";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Home(props) {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const gotoProductPage = (id) =>{
-        navigate('./ProductPage', {state:{id:id}})
-    }
+    // const gotoProductPage = (id) =>{
+    //     navigate('./ProductPage', {state:{id:id}})
+    // }
 
     return (
         <> 
@@ -36,7 +36,8 @@ function Home(props) {
                                             Some quick example text to build on the card title and make up
                                             the bulk of the card's content.
                                         </p>
-                                        <button className="btn btn-primary" onClick={() => {gotoProductPage(value.id)}}>
+                                        <button className="btn btn-primary">
+                                        {/* <button className="btn btn-primary" onClick={() => {gotoProductPage(value.id)}}> */}
                                             View
                                         </button>
                                         </div>

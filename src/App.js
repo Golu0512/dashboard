@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import ProductPage from "./components/ProductPage";
+// import ProductPage from "./components/ProductPage";
 import Footer from "./components/Footer";
 function App() {
   const products = {
@@ -36,7 +36,8 @@ function App() {
   return (
     <>
       <Header toggleMode={toggleMode} mode={mode} />
-        <BrowserRouter>
+      <Home mode={mode} />
+        {/* <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<Home mode={mode} />} />
             <Route
@@ -55,7 +56,7 @@ function App() {
               }
             />
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
       <Footer />
     </>
   );
