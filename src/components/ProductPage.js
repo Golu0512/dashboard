@@ -25,7 +25,7 @@ export default function ProductPage(props) {
                 </div>
                 </div>
 
-                <div className="col-xl-6 col-md-6 col-sm-12">
+                <div className="col-xl-6 col-md-6 col-sm-12 position-relative">
                     <div className="">
                         <h1 className={`text-uppercase text-danger`}>{product[0].name}</h1>
                         <h4 className={`text-capitalize`}>combination or base</h4>
@@ -36,7 +36,7 @@ export default function ProductPage(props) {
                         <p className={`text-capitalize`}>{product[0].indication}</p>
                     </div>
 
-                    <div className={`priceSection bg-secondary d-flex justify-content-between align-items-center mx-5 px-5 `}>
+                    <div className={`priceSection bg-secondary d-flex justify-content-between align-items-center mx-5 w-75 px-5 position-absolute bottom-0`}>
                         <h4 className={`text-uppercase`}>mrp</h4>
                         <h5>₹ {product[0].mrp}</h5>
                     </div>
