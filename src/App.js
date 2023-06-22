@@ -33,9 +33,9 @@ function App() {
   return (
     <>
       <Header toggleMode={toggleMode} mode={mode} />
-        <BrowserRouter basename="/dashboard">
+        <BrowserRouter>
           <Routes>
-            <Route exact path="/dashboard" element={<Home mode={mode} />} />
+            <Route exact path="/" element={<Home mode={mode} />} />
             <Route
               exact
               path="/productpage"
