@@ -31,3 +31,13 @@
 .pImage {
     object-fit: contain;
 }
+
+/* ------------------------ Badge ------------------------- */
+
+.badgecounter {
+    height: 20px;
+    width: 20px;
+    background: red;
+    transform: translateX(-5px);
+    font-size: 12px;
+}

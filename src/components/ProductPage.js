@@ -36,9 +36,11 @@ export default function ProductPage(props) {
                         <p className={`text-capitalize`}>{product[0].indication}</p>
                     </div>
 
-                    <div className={`priceSection bg-secondary d-flex justify-content-between align-items-center mx-5 w-75 px-5 position-absolute bottom-0`}>
-                        <h4 className={`text-uppercase`}>mrp</h4>
-                        <h5>₹ {product[0].mrp}</h5>
+                    <div className={`priceSection bg-secondary d-flex justify-content-between py-2 align-items-center mx-5 w-75 px-4 rounded-pill position-absolute bottom-0`}>
+                        <h4 className={`text-uppercase`}>mrp ₹{product[0].mrp}</h4>
+                        <button className="btn btn-success w-50 text-uppercase rounded-pill" onClick={props.badgeCounter}>
+                            add to cart
+                        </button>
                     </div>
                 </div>
             </div>

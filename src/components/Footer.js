@@ -74,7 +74,6 @@ function Footer() {
                 Pharma
             </a>
             </div>
-            Copyright
         </footer>
         </>
     );

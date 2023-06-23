@@ -17,6 +17,7 @@ function App() {
   };
 
   const [mode, setMode] = useState("light");
+  let [badgeCount, setbadgeCount] = useState(0);
 
   const toggleMode = () => {
     if (mode === "dark") {
@@ -30,9 +31,14 @@ function App() {
     }
   };
 
+  const badgeCounter = () => {
+    badgeCount = badgeCount + 1;
+    setbadgeCount(badgeCount);
+  }
+
   return (
     <>
-      <Header toggleMode={toggleMode} mode={mode} />
+      <Header toggleMode={toggleMode} mode={mode} itemCount={badgeCount} />
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<Home mode={mode} />} />
@@ -41,6 +47,7 @@ function App() {
               path="/productpage"
               element={
                 <ProductPage
+                  badgeCounter={badgeCounter}
                   id={products.id}
                   title={products.name}
                   combination={products.combination}
