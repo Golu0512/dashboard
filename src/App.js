@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import ProductPage from "./components/ProductPage";
 import Footer from "./components/Footer";
+
 function App() {
   const products = {
     "id": 1,

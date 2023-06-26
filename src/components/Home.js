@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "./Carousel";
 import Homedata from "../Homedata.json";
 import { useNavigate } from "react-router-dom";
+import LoginForm from "./LoginForm";
 
 function Home(props) {
 
@@ -46,6 +47,8 @@ function Home(props) {
                         })
                     }
                 </div>
+
+                <LoginForm />
 
         </>
     );
