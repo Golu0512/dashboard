@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
 
 function LoginForm() {
 
@@ -7,7 +8,16 @@ function LoginForm() {
         password: ''
     });
 
-    const [records, setRecords] = useState([]);
+        const getLocalStorageData = () =>{
+        let localStorageData = localStorage.getItem('userLogin');
+        if (localStorageData) {
+            return JSON.parse(localStorage.getItem('userLogin'));
+        } else {
+            return [];
+        }
+    };
+    
+    const [records, setRecords] = useState(getLocalStorageData());
 
     const getLogin = (e) =>{
         const name = e.target.name;
@@ -19,9 +29,12 @@ function LoginForm() {
         e.preventDefault();
         const newRecord = {...userLogin};
         setRecords([...records, newRecord]);
-        console.log(records);
         setuserLogin({email: '', password: ''});
     };
+
+    useEffect(() =>{
+        localStorage.setItem('userLogin',JSON.stringify(records));
+    },[records]);
 
 
     return (
