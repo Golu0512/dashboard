@@ -7,9 +7,9 @@ export default function Badge(props) {
         <>
             <div className="fs-4 me-5 d-flex float">
                 <span>
-                    <BiShoppingBag />
+                    <BiShoppingBag className="pointer" />
                 </span>
-                <div className="badgecounter rounded-circle d-flex justify-content-center align-items-center text-white fw-bold">
+                <div className="badgecounter rounded-circle d-flex justify-content-center align-items-center text-white fw-bold pointer">
                     {props.itemCount}
                 </div>
             </div>
